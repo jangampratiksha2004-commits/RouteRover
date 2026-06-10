@@ -1,50 +1,49 @@
-# Welcome to your Expo app 👋
+# RouteRover 🗺️
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+An AI-powered travel planner mobile app built with React Native & Expo. Plan trips, get hotel suggestions, flight info, and day-by-day itineraries using Google Gemini AI.
 
-## Get started
+## Features
+- AI-generated trip plans using Google Gemini
+- Google Places search for destinations
+- Hotel & flight recommendations
+- Day-by-day itinerary planner
+- Firebase authentication & data storage
 
-1. Install dependencies
+## Tech Stack
+- React Native (Expo)
+- Firebase (Auth + Firestore)
+- Google Gemini AI
+- Google Places API
+- Expo Router
 
-   ```bash
-   npm install
-   ```
+## Getting Started
 
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+### 1. Clone the repository
 ```bash
-npm run reset-project
+git clone https://github.com/jangampratiksha2004-commits/RouteRover.git
+cd RouteRover
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Install dependencies
+```bash
+npm install
+```
 
-## Learn more
+### 3. Set up environment variables
+```bash
+cp .env.example .env
+```
+Fill in your API keys in the `.env` file:
+- `EXPO_PUBLIC_GOOGLE_MAP_KEY` — [Google Maps/Places API](https://console.cloud.google.com/)
+- `EXPO_PUBLIC_GEMINI_API_KEY` — [Google Gemini AI](https://makersuite.google.com/)
+- `EXPO_PUBLIC_FIREBASE_API_KEY` — [Firebase Console](https://console.firebase.google.com/)
 
-To learn more about developing your project with Expo, look at the following resources:
+### 4. Start the app
+```bash
+npx expo start
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Scan the QR code with **Expo Go** app on your phone, or run on an emulator.
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Environment Variables
+Never commit your `.env` file. Use `.env.example` as a template.
